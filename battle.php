@@ -86,6 +86,14 @@ $battleResult = $battleManager->battle($ship1, $ship1Quantity, $ship2, $ship2Qua
                 <?php endif; ?>
             <?php endif; ?>
         </p>
+
+        <h3>Ship Health</h3>
+        <dl class="dl-horizontal">
+            <dt><?php echo $ship1->getName(); ?></dt>
+            <dt><?php echo $ship1->getStrength(); ?></dt>
+            <dt><?php echo $ship2->getName(); ?></dt>
+            <dt><?php echo $ship2->getStrength(); ?></dt>
+        </dl>
     </div>
     <a href="/index.php"><p class="text-center"><i class="fa fa-undo"></i> Battle again</p></a>
 
